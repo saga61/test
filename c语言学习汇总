@@ -34,3 +34,17 @@ int main()
 	else printf("卖红薯\n");
 		return 0;
 }
+while语句
+#include<stdio.h>
+int main()
+{
+	int line = 0;
+	printf("加入比特\n");
+	while (line < 2000)
+	{
+		printf("敲一行代码\n");
+		line++;
+	}
+	printf("给我一个好offer\n");
+	return 0;
+}
