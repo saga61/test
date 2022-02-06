@@ -33,7 +33,7 @@ int main()
 		printf("好offer\n");
 	else printf("卖红薯\n");
 		return 0;
-}
+		}
 while语句
 #include<stdio.h>
 int main()
@@ -46,5 +46,25 @@ int main()
 		line++;
 	}
 	printf("给我一个好offer\n");
+	return 0;
+}
+函数初识
+#include<stdio.h>
+int Add(int x, int y)
+{
+	int z = x + y;
+	return z;
+}
+int main()
+{
+	int num1 = 10;
+	int num2 = 20;
+	int num3 = 0;
+	int a = 100;
+	int b = 200;
+	num3 = Add(num1 ,num2);
+	num3 = Add(a, b);
+	printf("num3=%d\n", num3);
+
 	return 0;
 }
