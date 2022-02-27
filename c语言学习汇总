@@ -33,6 +33,7 @@ int main()
 		printf("好offer\n");
 	else printf("卖红薯\n");
 		return 0;
+		
 		}
 while语句
 #include<stdio.h>
@@ -66,5 +67,18 @@ int main()
 	num3 = Add(a, b);
 	printf("num3=%d\n", num3);
 
+	return 0;
+}
+比大小问题if语句
+#include<string.h>
+#include<stdio.h>
+int main()
+{
+	int num1 = 10;
+	int num2 = 20;
+	if (num1 > num2)
+		printf("较大值:%d\n", num1);
+	else
+		printf("较大值是:%d\n", num2);
 	return 0;
 }
