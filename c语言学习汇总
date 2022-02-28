@@ -103,6 +103,7 @@ int main()
 
 }
 逻辑语
+//非零为真,；零为假。
 #include<stdio.h>
 int main()
 {
