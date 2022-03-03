@@ -129,3 +129,19 @@ int main()
 	}
 \\条件操作符
 \\补码等于反码加一，原码等于反码的符号位不变，其他位相反。
+#include<stdio.h>
+int main()
+{
+	int a = 10;
+	int b = 20;
+	int max = 0;
+	max = (a > b ? a : b);
+	if (a > b)
+		printf("%d\n", a);
+	else
+	printf("%d\n", b);
+	return 0;
+}
+\\另一个例子
+
+
