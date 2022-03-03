@@ -143,5 +143,40 @@ int main()
 	return 0;
 }
 \\另一个例子
-
+register寄存器 unsigned无符号 sign有符号
+#include<stdio.h>
+void test()
+{
+	int a = 1;
+	a++;
+	printf("%d\n", a);
+}
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
+\\另外的情况
+#include<stdio.h>
+void test()
+{
+	static int a = 1;
+	a++;
+	printf("%d\n", a);
+}
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+		test();
+		i++;
+	}
+	return 0;
+}
 
