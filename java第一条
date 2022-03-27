@@ -103,4 +103,21 @@ public class 欧阳文帅 {
 		     }
 		     }
 		    
-		}
+		    
+//赋值运算府的应用例子
+public class fsdf {
+
+	public static void main(String[] args) {
+    int i=10;
+    System.out.println("i:"+i);
+	i=i+20;
+	System.out.println("i:"+i);
+	short a=10;
+	a=(short)(a+10);
+	System.out.println("a:"+a);
+	short q=10;
+	q=(short)(q+20);
+	System.out.println("q:"+q);
+	} 
+	
+}
