@@ -121,3 +121,78 @@ public class fsdf {
 	} 
 	
 }
+
+package wc1;
+
+public class wc1 {
+	 private  int[] queue = null;
+	    private int front = 0;
+	    private int rear = 0;
+	    private boolean empty = true;
+	    //设置循环队列长度
+	    public wc1(int max) {
+	        this.queue = new int[max];
+	    }
+	    //清空循环队列
+	    public void clearQueue() {
+	        this.front = 0;
+	        this.rear = 0;
+	        this.empty = true;
+	        for(int i:this.queue) {
+	            i = 0;
+	        }
+
+
+	    }
+	    //返回循环队列的元素个数
+	    public int queueLength() {
+	        if(this.front==this.rear && this.empty==false) {//如果循环队列已满，则返回数组长度即元素个数
+	            return this.queue.length;
+	        }
+	        else {//否则，取模运算得到长度
+	            return (this.rear-this.front+this.queue.length)%this.queue.length;
+	        }
+	    }
+	    //向队尾插入元素
+	    public void enQueue(int value) {
+	        if(this.front==this.rear && this.empty==false) {
+	            System.out.println("队列已满");
+	        }
+	        else {
+	            this.queue[this.rear] = value;
+	            this.rear=(++this.rear)%this.queue.length;
+	            this.empty = false;
+	        }
+	    }
+	    //删除并返回对头元素
+	    public void deQueue() {
+	        if(this.front==this.rear && this.empty==true) {
+	            System.out.println("队列为空");
+	        }
+	        else {
+	            this.queue[this.front] = 0;
+	            this.front = (++this.front)%this.queue.length;
+	            if(this.queue[this.front]==0){
+	                System.out.println("队首元素已删除");
+	            }
+	        }
+	    }
+	    //遍历循环队列
+	    public void queueTraverse() {
+	        for(int i:this.queue){
+	            System.out.print(i+" ");
+	        }
+	    }
+	    public static void main(String[] args) {
+	    	System.out.println("算机2103 欧阳文帅2112180310");
+	        wc1 q = new wc1(5);
+	        q.deQueue();//
+	        q.enQueue(1);
+	        q.enQueue(32);
+	        q.enQueue(8);
+	        q.enQueue(1);
+	        q.enQueue(32);
+	        q.enQueue(8);
+	        q.queueTraverse();
+	    }}
+	    
