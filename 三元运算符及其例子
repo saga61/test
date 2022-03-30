@@ -1,0 +1,50 @@
+
+public class oyws {
+
+	public static void main(String[] args) {
+  //定义两个变量
+		int a=10;
+		int b=20;
+		//获取两个数据中的较大值
+		int max= a > b ? a : b;
+    //输出较大值
+		System.out.println("max:"+max);
+	}
+
+}
+//两只老虎三元简例
+
+public class oyws {
+
+	public static void main(String[] args) {
+		//定义两个老虎的体重
+		int weight1=180;
+		int weight2=200;
+		//用三元运算符实现两个老虎体重的比较，相同返回true，反则是false
+		boolean b= weight1== weight2? true:false;
+		//结果为false
+		System.out.println("b:"+b);
+	}
+
+}
+//三个和尚案例
+
+public class oyws {
+
+	public static void main(String[] args) {
+		//定义三个和尚身高；
+	int height1=150;
+	int height2=210;
+	int height3=165;
+	//先比前两个身高，高的和下一组比；
+	int tempHeight= height1>height2 ? height1 :height2;
+	//上一组比完选最高的；
+	int maxHeight=tempHeight>height3 ?tempHeight:height3;
+	//选出追高的
+	System.out.println("maxHeight:"+maxHeight);
+	
+	
+	
+	}
+
+}
