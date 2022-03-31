@@ -1,0 +1,70 @@
+//顺序结构
+public class agdhjao {
+
+	public static void main(String[] args) {
+		System.out.println("开始");
+		System.out.println("语句A");
+		System.out.println("语句B");
+		System.out.println("语句C");
+		System.out.println("结束");
+
+	}
+
+}
+//if循环语句
+
+public class agdhjao {
+
+	public static void main(String[] args) {
+		int a=10;
+		int b=20;
+		if (a== b) {
+			System.out.println("a等于b");
+			
+		}
+		int c=10;
+		if(a==c) {
+			System.out.println("a等于c");
+		}
+		System.out.println("结束");
+
+	}
+
+}
+//第二种if  else
+
+public class agdhjao {
+
+	public static void main(String[] args) {
+		System.out.println("开始");
+		int a=10;
+		int b=20;
+		if(a>b) {
+			System.out.println("a的是大于b");
+		}
+		else {
+			System.out.println("a的是小于b");
+			
+		}
+		System.out.println("结束");
+	}
+
+}
+//奇偶数实例
+import java.util.Scanner;
+public class agdhjao {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("请输入一个数");
+	int number=sc.nextInt();
+	if(number%2==0) {
+		System.out.println(number+"是偶数");
+	}
+	else {
+		System.out.println(number+"是奇数");
+	}
+		
+	}
+
+}
