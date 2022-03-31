@@ -1,0 +1,41 @@
+//数据输入 ，导包
+import java.util.Scanner;
+
+public class oyws {
+
+	public static void main(String[] args) {
+	//创建对象
+	Scanner sc= new Scanner (System.in);
+	//接受数据
+	int x =sc.nextInt();
+	//输出结果
+	System.out.println("x:"+x);
+	
+	
+	
+	}
+
+}
+
+//三个和尚数据输入改写版
+//数据输入 ，导包
+import java.util.Scanner;
+
+public class oyws {
+
+	public static void main(String[] args) {
+	//创建对象
+	Scanner sc= new Scanner (System.in);
+	//接受数据
+	int height1 =sc.nextInt();
+	int height2 =sc.nextInt();
+	int height3 =sc.nextInt();
+	int tempHeight =height1>height2?height1:height2;
+	int maxHeight=tempHeight>height3?tempHeight:height3;
+	System.out.println("maxHeight:"+maxHeight);
+	
+	
+	
+	}
+
+}
