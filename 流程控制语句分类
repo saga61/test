@@ -101,3 +101,37 @@ System.out.println("结束");
 	}
 
 }
+//考试奖励问题
+package swadsaf;
+
+import java.util.Scanner;
+
+public class DSFSDF {
+
+	public static void main(String[] args) {
+    Scanner sc = new Scanner (System.in);
+    
+    int score=sc.nextInt();
+   
+    String sd="山地车";
+    String sf="变形金刚";
+    String sg="北大";
+    String sh="大逼兜";
+    if (score>=95&&score<=100){
+    	System.out.println("奖励:"+sd);
+    }
+    else if (score>=85&&score<95){
+    	System.out.println("奖励:"+sf);
+    }
+    else if(score>=60&&score<85) {
+    	System.out.println("奖励:"+sg);
+    }
+    else if(score>=0&&score<60) {
+    	System.out.println("奖励:"+sh);
+    }
+    System.out.println("结束");
+    sc.close();
+	}
+
+}
+
