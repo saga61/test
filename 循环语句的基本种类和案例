@@ -108,3 +108,13 @@ public class ddsfs {
     }
 
 }
+//do while 语句最简单的格式+
+
+int i=1;
+        
+     do {
+             System.out.println(i);
+             i++;
+             
+         }
+         while(i<=5);
