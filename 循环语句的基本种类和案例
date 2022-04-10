@@ -118,3 +118,18 @@ int i=1;
              
          }
          while(i<=5);
+//循环嵌套
+
+public class fdesfghjk {
+
+	public static void main(String[] args) {
+    for (int hour=0; hour<24;hour++) {
+    	for(int minute=0;minute<60;minute++){
+    	 	System.out.println(hour + "时"+hour+"分") ;
+    	}
+     	System.out.println("北京时间") ;
+    }
+	}
+
+}
+
